@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="analogclock.css">
+</head>
+<body>
+    <div class="round">
+            <div id="hour"></div>
+            <div id="minute"></div>
+            <div id="second"></div>
+        <div class="clock">
+           
+            <div class="one">1</div>
+            <div class="two">2</div>
+            <div class="three">3</div>
+            <div class="four">4</div>
+            <div class="five">5</div>
+            <div class="six">6</div>
+            <div class="seven">7</div>
+            <div class="eight">8</div>
+            <div class="nine">9</div>
+            <div class="ten">10</div>
+            <div class="eleven">11</div>
+            <div class="twelve">12</div>
+            
+        </div>
+    </div>
+    <script>
+        function time(){
+            
+            let clock=new Date()
+            let hours=clock.getHours()
+            let minutes=clock.getMinutes()
+            let seconds=clock.getSeconds()
+           
+            hours_rotation = 30 * hours + minutes / 2; //converting current time
+            minutes_rotation = 6 * minutes;
+            seconds_rotation = 6 * seconds;
+            document.querySelector('#hour').style.transform = `rotate(${hours_rotation}deg)`;
+            document.querySelector('#minute').style.transform = `rotate(${minutes_rotation}deg)`;
+            document.querySelector('#second').style.transform = `rotate(${seconds_rotation}deg)`;
+        
+        }
+        setInterval(time,1000)
+    </script>
+
+</body>
+</html>

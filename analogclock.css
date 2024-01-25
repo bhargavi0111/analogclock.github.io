@@ -1,0 +1,124 @@
+.round{
+    background-color:rgb(42, 168, 218);
+    height: 20em;
+    width: 20em;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    top:4em;
+    left:35%;
+
+
+    /* justify-content: center;
+    align-items: center; */
+    /* background:conic-gradient(pink 0deg 30deg,red 30deg 60deg,blue 60deg 90deg,green 90deg 120deg,yellow 120deg 150deg,pink 150deg 180deg,brown 180deg 210deg, gray 210deg 240deg,pink 240deg 270deg,green 270deg 300deg,red 300deg 330deg,blueviolet 330deg 360deg ); */
+   
+   
+}
+
+
+.twelve{
+    position: relative;
+     bottom:12em;
+     
+}
+.one{
+    position: relative;
+    top:2em;
+    left:4.3em;  
+}
+.two{
+    position: relative;
+    top:4em;
+    left:7.5em;
+}
+.three{
+    position: relative;
+    top:7em;
+    left:8.5em;
+}
+.four{
+    position: relative;
+    top:10.2em;
+    left:7.5em;
+}
+.five{
+    position: relative;
+    top:12em;
+    left:4.2em;
+}
+.six{
+    position: relative;
+    top:12em; 
+}
+.seven{
+    position: relative;
+    top:10em;
+    right:4.5em;
+}
+.eight{
+    position: relative;
+    top:5em;
+    right:8em;
+}
+.nine{
+    position: relative;
+    bottom:0.2em;
+    right:9em;
+}
+.ten{
+    position: relative;
+    bottom:5.8em;
+    right: 8em;
+}
+.eleven{
+    position: relative;
+    bottom:10em;
+    right:4em;
+}
+#hour,
+#minute,
+#second {
+    position: absolute;
+    
+    border-radius: 10em;
+    transform-origin: bottom;
+}
+ 
+#hour {
+    background: red;
+    width: 0.5em;
+    height: 4em;
+    top: 6em;
+    left:10em;
+    /* opacity: 0.8; */
+  
+
+}
+ 
+#minute {
+    background: green;
+    /* width: 1.6%;
+    height: 20%;
+    top: 19%;
+    left: 48.9%; */
+    width: 0.3em;
+    height: 6em;
+    top: 4em;
+    left:10em;
+    /* opacity: 0.8; */
+}
+ 
+#second {
+    background: yellow;
+    /* width: 1%;
+    height: 30%;
+    top: 9%;
+    left: 49.25%; */
+    /* opacity: 0.8; */
+    width: 0.3em;
+    height: 8em;
+    top: 2em;
+    left:10em;
+}
